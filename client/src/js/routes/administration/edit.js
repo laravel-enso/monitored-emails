@@ -1,0 +1,11 @@
+const MonitoredEmailEdit = () => import('../../pages/administration/Edit.vue');
+
+export default {
+    name: 'administration.edit',
+    path: ':monitoredEmail/edit',
+    component: MonitoredEmailEdit,
+    meta: {
+        breadcrumb: 'edit',
+        title: 'Edit Monitored Email',
+    },
+};

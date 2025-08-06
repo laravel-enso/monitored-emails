@@ -1,0 +1,7 @@
+{
+    "routePrefix": "administration",
+    "sections": [{
+        "columns": 2,
+        "fields": []
+    }]
+}
