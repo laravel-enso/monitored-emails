@@ -4,9 +4,11 @@ namespace LaravelEnso\MonitoredEmails\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use LaravelEnso\Tables\Traits\TableCache;
 
 class MonitoredMessage extends Model
 {
+    use TableCache;
     protected $table = 'monitored_emails_messages';
 
     protected $guarded = [];

@@ -1,4 +1,4 @@
-const MonitoredEmailIndex = () => import('../../pages/administration/Index.vue');
+const MonitoredEmailIndex = () => import('../../../pages/administration/monitoredEmails/Index.vue');
 
 export default {
     name: 'administration.monitoredEmails.index',

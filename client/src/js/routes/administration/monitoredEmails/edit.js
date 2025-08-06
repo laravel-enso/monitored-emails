@@ -1,4 +1,4 @@
-const MonitoredEmailEdit = () => import('../../pages/administration/Edit.vue');
+const MonitoredEmailEdit = () => import('../../../pages/administration/monitoredEmails/Edit.vue');
 
 export default {
     name: 'administration.monitoredEmails.edit',

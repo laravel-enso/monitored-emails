@@ -6,7 +6,7 @@
     "keywords": [],
     "homepage": "https://www.laravel-enso.com",
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "laravel-enso/helpers": "^3.0"
     },
     "autoload": {
