@@ -8,7 +8,7 @@ use LaravelEnso\MonitoredEmails\Models\MonitoredEmail;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('monitored_emails', function (Blueprint $table) {
+        Schema::create('monitored_emails_messages', function (Blueprint $table) {
             $table->id();
 
             $table->string('sender');
@@ -28,6 +28,6 @@ return new class extends Migration {
 
     public function down(): void
     {
-        Schema::dropIfExists('monitored_emails');
+        Schema::dropIfExists('monitored_emails_messages');
     }
 };

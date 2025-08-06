@@ -20,7 +20,7 @@ class MonitoredMessage extends Model
     {
         return [
             'received_at' => 'datetime',
-            'is_active' => 'boolean',
+            'is_processed' => 'boolean',
         ];
     }
     //

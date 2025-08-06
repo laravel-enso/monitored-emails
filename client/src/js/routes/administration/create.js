@@ -1,7 +1,7 @@
 const MonitoredEmailCreate = () => import('../../pages/administration/Create.vue');
 
 export default {
-    name: 'administration.create',
+    name: 'administration.monitoredEmails.create',
     path: 'create',
     component: MonitoredEmailCreate,
     meta: {

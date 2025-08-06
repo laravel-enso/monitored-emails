@@ -4,11 +4,11 @@ const routes = routeImporter(require.context('./administration', false, /.*\.js$
 const RouterView = () => import('@enso-ui/ui/src/bulma/pages/Router.vue');
 
 export default {
-    path: '/administration',
+    path: '/administration.monitoredEmails',
     component: RouterView,
     meta: {
-        breadcrumb: 'administration',
-        route: 'administration.index',
+        breadcrumb: 'monitoredEmails',
+        route: 'administration.monitoredEmails.index',
     },
     children: routes,
 };

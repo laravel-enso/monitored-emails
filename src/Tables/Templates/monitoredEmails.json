@@ -1,12 +1,51 @@
 {
     "name": "Monitored Email",
-    "routePrefix": "administration",
+    "routePrefix": "administration.monitoredEmails",
     "crtNo": true,
-    "buttons": ["excel", "create", "show", "edit", "destroy"],
-    "columns": [{
-        "label": "Id",
-        "name": "id",
-        "data": "monitored_emails.id",
-        "meta": ["searchable", "sortable"]
-    }]
+    "buttons": [
+        "excel",
+        "create",
+        "show",
+        "edit",
+        "destroy"
+    ],
+    "columns": [
+        {
+            "label": "Email",
+            "name": "email",
+            "data": "monitored_emails.email",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Host",
+            "name": "host",
+            "data": "monitored_emails.host",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Protocol",
+            "name": "protocol",
+            "data": "monitored_emails.protocol",
+            "enum": "LaravelEnso\\MonitoredEmails\\Enums\\Protocol",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Active",
+            "name": "is_active",
+            "data": "monitored_emails.is_active",
+            "meta": [
+                "boolean",
+                "sortable"
+            ]
+        }
+    ]
 }

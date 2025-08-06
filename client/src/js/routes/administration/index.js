@@ -1,7 +1,7 @@
 const MonitoredEmailIndex = () => import('../../pages/administration/Index.vue');
 
 export default {
-    name: 'administration.index',
+    name: 'administration.monitoredEmails.index',
     path: '',
     component: MonitoredEmailIndex,
     meta: {

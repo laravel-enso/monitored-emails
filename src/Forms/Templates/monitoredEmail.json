@@ -1,7 +1,64 @@
 {
-    "routePrefix": "administration",
-    "sections": [{
-        "columns": 2,
-        "fields": []
-    }]
+    "routePrefix": "administration.monitoredEmails",
+    "sections": [
+        {
+            "columns": 2,
+            "fields": [
+                {
+                    "label": "Email",
+                    "name": "email",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Password",
+                    "name": "password",
+                    "value": null,
+                    "meta": {
+                        "type": "password"
+                    }
+                },
+                {
+                    "label": "host",
+                    "name": "host",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Port",
+                    "name": "port",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "text",
+                        "max": 6
+                    }
+                },
+                {
+                    "label": "Protocol",
+                    "name": "protocol",
+                    "value": 143,
+                    "meta": {
+                        "type": "select",
+                        "options": "LaravelEnso\\MonitoredEmails\\Enums\\Protocol"
+                    }
+                },
+                {
+                    "label": "Active",
+                    "name": "is_active",
+                    "value": true,
+                    "meta": {
+                        "type": "input",
+                        "content": "checkbox"
+                    }
+                }
+            ]
+        }
+    ]
 }

@@ -10,6 +10,7 @@ enum Protocol: int implements Select
     use Options;
 
     case IMAP = 143;
+    case SecureIMAP = 993;
     case POP3 = 110;
     case SMTP = 25;
 }
