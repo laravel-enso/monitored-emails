@@ -18,11 +18,12 @@
                     "name": "password",
                     "value": null,
                     "meta": {
-                        "type": "password"
+                        "type": "input",
+                        "content":"password"
                     }
                 },
                 {
-                    "label": "host",
+                    "label": "Host",
                     "name": "host",
                     "value": null,
                     "meta": {
@@ -43,7 +44,7 @@
                 {
                     "label": "Protocol",
                     "name": "protocol",
-                    "value": 143,
+                    "value": 1,
                     "meta": {
                         "type": "select",
                         "options": "LaravelEnso\\MonitoredEmails\\Enums\\Protocol"

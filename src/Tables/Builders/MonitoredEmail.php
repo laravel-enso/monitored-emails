@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\MonitoredEmails\Tables\Builders;
 
-use LaravelEnso\MonitoredEmails\Models\MonitoredEmail as Model;
 use Illuminate\Database\Eloquent\Builder;
+use LaravelEnso\MonitoredEmails\Models\MonitoredEmail as Model;
 use LaravelEnso\Tables\Contracts\Table;
 
 class MonitoredEmail implements Table
@@ -13,7 +13,8 @@ class MonitoredEmail implements Table
     public function query(): Builder
     {
         return Model::selectRaw('
-            monitored_emails.id
+            monitored_emails.id ,monitored_emails.email, monitored_emails.host,
+            monitored_emails.protocol, monitored_emails.is_active
         ');
     }
 

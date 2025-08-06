@@ -1,6 +1,6 @@
 <template>
     <enso-table class="box is-paddingless raises-on-hover"
-        id="monitored_emails"/>
+        id="monitoredEmails"/>
 </template>
 
 <script>

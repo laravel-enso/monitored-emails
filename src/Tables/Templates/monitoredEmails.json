@@ -13,7 +13,7 @@
         {
             "label": "Email",
             "name": "email",
-            "data": "monitored_emails.email",
+            "data": "email",
             "meta": [
                 "searchable",
                 "sortable"
@@ -22,7 +22,7 @@
         {
             "label": "Host",
             "name": "host",
-            "data": "monitored_emails.host",
+            "data": "host",
             "meta": [
                 "searchable",
                 "sortable"
@@ -31,7 +31,7 @@
         {
             "label": "Protocol",
             "name": "protocol",
-            "data": "monitored_emails.protocol",
+            "data": "protocol",
             "enum": "LaravelEnso\\MonitoredEmails\\Enums\\Protocol",
             "meta": [
                 "searchable",
@@ -41,7 +41,7 @@
         {
             "label": "Active",
             "name": "is_active",
-            "data": "monitored_emails.is_active",
+            "data": "is_active",
             "meta": [
                 "boolean",
                 "sortable"

@@ -9,8 +9,18 @@ enum Protocol: int implements Select
 {
     use Options;
 
-    case IMAP = 143;
-    case SecureIMAP = 993;
-    case POP3 = 110;
-    case SMTP = 25;
+    case IMAP = 1;
+    case SecureIMAP = 2;
+    case POP3 = 3;
+    case SMTP = 4;
+
+    public function port(): int
+    {
+        return match ($this) {
+            self::IMAP => 143,
+            self::SecureIMAP => 993,
+            self::POP3 => 110,
+            self::SMTP => 25,
+        };
+    }
 }

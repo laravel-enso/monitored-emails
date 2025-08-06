@@ -4,7 +4,7 @@ const routes = routeImporter(require.context('./monitoredEmails', false, /.*\.js
 const RouterView = () => import('@enso-ui/ui/src/bulma/pages/Router.vue');
 
 export default {
-    path: '/administration.monitoredEmails',
+    path: 'monitoredEmails',
     component: RouterView,
     meta: {
         breadcrumb: 'monitoredEmails',
