@@ -20,7 +20,7 @@ return new class extends Migration {
     ];
 
     protected array $menu = [
-        'name' => 'Monitored Emails', 'icon' => 'envelope-open', 'route' => 'administration.monitotredEmails.index', 'order_index' => 9999, 'has_children' => false,
+        'name' => 'Monitored Emails', 'icon' => 'envelope-open', 'route' => 'administration.monitoredEmails.index', 'order_index' => 9999, 'has_children' => false,
     ];
 
     protected ?string $parentMenu = 'Administration';
