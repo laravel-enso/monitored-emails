@@ -1,2 +1,14 @@
 ###  laravel-enso - monitored-emails
-Coming soon
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b499044a68b84f339b905576570c84ab)](https://www.codacy.com/gh/laravel-enso/track-who?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-enso/track-who&amp;utm_campaign=Badge_Grade) 
+[![License](https://poser.pugx.org/laravel-enso/track-who/license)](https://packagist.org/packages/laravel-enso/track-who)
+[![Latest Stable Version](https://poser.pugx.org/laravel-enso/track-who/version)](https://packagist.org/packages/laravel-enso/monitored-emails)
+
+Monitor and processor of emails dependency for [Laravel-Enso](https://github.com/laravel-enso/Enso) ecosystem.
+
+## Contributions
+
+are welcome. Pull requests are great, but issues are good too.
+
+## License
+
+This package is released under the MIT license.
