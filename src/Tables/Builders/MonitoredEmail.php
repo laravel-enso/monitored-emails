@@ -13,8 +13,9 @@ class MonitoredEmail implements Table
     public function query(): Builder
     {
         return Model::selectRaw('
-            monitored_emails.id ,monitored_emails.email, monitored_emails.host,
-            monitored_emails.protocol, monitored_emails.is_active
+            monitored_emails.id, monitored_emails.email, monitored_emails.host,
+            monitored_emails.folder, monitored_emails.protocol,
+            monitored_emails.is_active
         ');
     }
 

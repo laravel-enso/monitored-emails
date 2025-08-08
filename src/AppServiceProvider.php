@@ -2,14 +2,16 @@
 
 namespace LaravelEnso\MonitoredEmails;
 
+use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider;
+use LaravelEnso\MonitoredEmails\Commands\FetchUnreadEmails;
 
 class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
         $this->load();
-        $this->publish();
+        $this->command();
     }
 
     private function load()
@@ -18,15 +20,13 @@ class AppServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 
-    private function publish()
+    private function command(): void
     {
-        $this->publishes([
-            __DIR__.'/../client/src/js' => base_path('client/src/js'),
-        ], 'monitored-emails-assets');
-    }
+        $this->commands(FetchUnreadEmails::class);
 
-    public function register()
-    {
-        //
+        $this->app->booted(function () {
+            $schedule = $this->app->make(Schedule::class);
+            $schedule->command('enso:monitored-emails:fetch-unread-emails')->hourly();
+        });
     }
 }

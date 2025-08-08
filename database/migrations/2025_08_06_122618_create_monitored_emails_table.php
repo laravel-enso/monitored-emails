@@ -12,6 +12,7 @@ return new class extends Migration {
 
             $table->string('email');
             $table->string('password');
+            $table->string('folder');
             $table->string('host');
             $table->string('port', 6)->nullable();
 

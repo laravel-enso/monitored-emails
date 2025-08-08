@@ -20,6 +20,8 @@ class FetchUnreadEmails
 
     public function handle()
     {
+        \Log::info('handlig');
+        \Log::info($this->email->email);
         $this->init()
             ->fetch();
     }
@@ -42,7 +44,7 @@ class FetchUnreadEmails
 
     private function fetch(): self
     {
-        $folder = $this->client->getFolder('INBOX'); // $this->email->folder()
+        $folder = $this->email->folder;
 
         $folder->query()
             ->unseen()
@@ -54,16 +56,21 @@ class FetchUnreadEmails
 
     private function process(Message $message): void
     {
-        MonitoredMessage::create([ //FirstOrCreate after unique id
-            'mail_id' => $this->email->id,
-            'sender' => $message->getFrom()[0]->mail,
-            'subject' => $message->getSubject(),
-            'body' => $message->getTextBody() ?: $message->getHtmlBody(),
-            'received_at' => Carbon::parse($message->getDate(), 'UTC')
-                ->setTimezone(Config::get('app.timezone'))
-                ->format('Y-m-d H:i:s'),
-            'is_processed' => false,
-        ]);
+        MonitoredMessage::firstOrCreate(
+            [
+            'message_id' => $message->getMessageId(),
+            ],
+            [
+                'mail_id' => $this->email->id,
+                'sender' => $message->getFrom()[0]->mail,
+                'subject' => $message->getSubject(),
+                'body' => $message->getTextBody() ?: $message->getHtmlBody(),
+                'received_at' => Carbon::parse($message->getDate(), 'UTC')
+                    ->setTimezone(Config::get('app.timezone'))
+                    ->format('Y-m-d H:i:s'),
+                'is_processed' => false,
+            ]
+        );
 
         $message->setFlag('Seen');
     }

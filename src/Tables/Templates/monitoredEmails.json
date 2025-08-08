@@ -20,6 +20,15 @@
             ]
         },
         {
+            "label": "Folder",
+            "name": "folder",
+            "data": "folder",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
             "label": "Host",
             "name": "host",
             "data": "host",

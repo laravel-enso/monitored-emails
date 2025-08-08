@@ -14,6 +14,8 @@ return new class extends Migration {
             $table->string('sender');
             $table->string('subject');
 
+            $table->string('message_id');
+
             $table->text('body');
 
             $table->foreignIdFor(MonitoredEmail::class, 'mail_id');

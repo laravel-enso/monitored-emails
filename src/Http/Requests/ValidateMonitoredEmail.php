@@ -18,6 +18,7 @@ class ValidateMonitoredEmail extends FormRequest
         return [
             'email' => 'required|email',
             'password' => 'required|string',
+            'folder' => 'required|string',
             'host' => 'required|string',
             'port' => 'nullable|string|max:6',
             'protocol' => ['required', Rule::enum(Protocol::class)],

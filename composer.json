@@ -23,7 +23,8 @@
     ],
     "require": {
         "php": ">=8.0",
-        "laravel-enso/core": "^10.0"
+        "laravel-enso/core": "^10.0",
+        "webklex/php-imap": "^6.2"
     },
     "autoload": {
         "psr-4": {
