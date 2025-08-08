@@ -58,7 +58,7 @@
                 {
                     "label": "Protocol",
                     "name": "protocol",
-                    "value": 1,
+                    "value": 2,
                     "column": 4,
                     "meta": {
                         "type": "select",
