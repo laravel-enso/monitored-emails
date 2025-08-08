@@ -9,6 +9,7 @@ use LaravelEnso\Tables\Traits\TableCache;
 class MonitoredMessage extends Model
 {
     use TableCache;
+
     protected $table = 'monitored_emails_messages';
 
     protected $guarded = [];
@@ -25,5 +26,4 @@ class MonitoredMessage extends Model
             'is_processed' => 'boolean',
         ];
     }
-    //
 }
