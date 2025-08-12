@@ -1,0 +1,41 @@
+{
+    "name": "laravel-enso/monitored-emails",
+    "type": "library",
+    "description": "Email monitor and processor for Laravel Enso",
+    "keywords": [
+        "email-monitoring,",
+        "email-processing"
+    ],
+    "homepage": "https://www.laravel-enso.com",
+    "authors": [
+        {
+            "name": "Vlad Chiovianu",
+            "email": "vlad.chioivanu@earthlink.ro",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Teodor Pop",
+            "email": "tedipop16@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel-enso/core": "^10.0",
+        "webklex/php-imap": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\MonitoredEmails\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\MonitoredEmails\\AppServiceProvider"
+            ]
+        }
+    }
+}
