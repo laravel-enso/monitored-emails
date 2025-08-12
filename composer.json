@@ -3,10 +3,11 @@
     "type": "library",
     "description": "Email monitor and processor for Laravel Enso",
     "keywords": [
-        "email-monitoring,",
+        "email-monitoring",
         "email-processing"
     ],
-    "homepage": "https://www.laravel-enso.com",
+    "homepage": "https://laravel-enso.com",
+    "license": "MIT",
     "authors": [
         {
             "name": "Vlad Chiovianu",
@@ -22,13 +23,18 @@
         }
     ],
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.2",
         "laravel-enso/core": "^10.0",
         "webklex/php-imap": "^6.2"
     },
     "autoload": {
         "psr-4": {
             "LaravelEnso\\MonitoredEmails\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelEnso\\MonitoredEmails\\Tests\\": "tests/"
         }
     },
     "extra": {
