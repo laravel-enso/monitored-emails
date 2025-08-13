@@ -24,7 +24,9 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->commands(FetchUnreadEmails::class);
 
-        $this->app->booted(fn () => $this->app->make(Schedule::class)
-            ->command('enso:monitored-emails:fetch-unread-emails')->hourly());
+        $this->app->booted(fn () => $this->app
+            ->make(Schedule::class)
+            ->command('enso:monitored-emails:fetch-unread-emails')
+            ->everyFifteenMinutes());
     }
 }

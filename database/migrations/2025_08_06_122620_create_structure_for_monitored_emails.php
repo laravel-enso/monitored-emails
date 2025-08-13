@@ -17,7 +17,7 @@ return new class extends Migration {
 
         ['name' => 'administration.monitoredEmails.exportExcel', 'description' => 'Export excel for monitored emails', 'is_default' => false],
 
-        ['name' => 'administration.monitoredEmails.testMail', 'description' => 'Route for testing emails', 'is_default' => false],
+        ['name' => 'administration.monitoredEmails.testEmail', 'description' => 'Route for testing emails', 'is_default' => false],
 
     ];
 
