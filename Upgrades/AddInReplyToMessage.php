@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Ticketing\Upgrades;
+namespace LaravelEnso\MonitoredEmails\Upgrades;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
