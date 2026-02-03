@@ -36,7 +36,7 @@ class FetchUnreadEmails
             'received_at' => Carbon::parse($message->getDate(), 'UTC')
                 ->setTimezone(Config::get('app.timezone'))
                 ->format('Y-m-d H:i:s'),
-            'has_attachments' => false, //TODO
+            'has_attachments' => $message->hasAttachments(),
             'is_processed' => false,
         ]);
 

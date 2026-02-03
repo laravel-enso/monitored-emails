@@ -20,6 +20,16 @@ class MonitoredMessage extends Model
         return $this->belongsTo(MonitoredEmail::class, 'mail_id');
     }
 
+    public function fetch()
+    {
+        $this->mail->connect()
+            ->getFolder($this->mail->folder)
+            ->query()
+            ->whereMessageId($this->message_id)
+            ->get()
+            ->first();
+    }
+
     public function scopeUnprocessed(Builder $query): Builder
     {
         return $query->whereIsProcessed(false);
