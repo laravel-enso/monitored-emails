@@ -30,6 +30,7 @@ class FetchUnreadEmails
             'message_id' => $message->getMessageId(),
         ], [
             'mail_id' => $this->email->id,
+            'in_reply_to' => $message->getInReplyTo(),
             'from' => $message->getFrom()[0]->mail,
             'subject' => $message->getSubject(),
             'body' => $message->getTextBody() ?: $message->getHtmlBody(),
