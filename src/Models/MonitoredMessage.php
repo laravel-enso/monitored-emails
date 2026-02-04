@@ -22,7 +22,7 @@ class MonitoredMessage extends Model
 
     public function fetch()
     {
-        $this->mail->connect()
+        return $this->mail->connect()
             ->getFolder($this->mail->folder)
             ->query()
             ->whereMessageId($this->message_id)
