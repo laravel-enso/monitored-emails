@@ -8,7 +8,7 @@
                     "label": "Email",
                     "name": "email",
                     "value": null,
-                    "column": 6,
+                    "column": 12,
                     "meta": {
                         "type": "input",
                         "content": "text"
@@ -17,11 +17,11 @@
                 {
                     "label": "Password",
                     "name": "password",
-                    "column": 6,
+                    "column": 12,
                     "value": null,
                     "meta": {
                         "type": "input",
-                        "content":"password"
+                        "content": "password"
                     }
                 },
                 {
@@ -48,18 +48,18 @@
                     "label": "Port",
                     "name": "port",
                     "value": null,
-                    "column": 4,
+                    "column": 6,
                     "meta": {
                         "type": "input",
                         "content": "text",
                         "max": 6
                     }
                 },
-                {            
+                {
                     "label": "Protocol",
                     "name": "protocol",
                     "value": 2,
-                    "column": 4,
+                    "column": 6,
                     "meta": {
                         "type": "select",
                         "options": "LaravelEnso\\MonitoredEmails\\Enums\\Protocol"
@@ -69,7 +69,7 @@
                     "label": "Active",
                     "name": "is_active",
                     "value": true,
-                    "column": 4,
+                    "column": 6,
                     "meta": {
                         "type": "input",
                         "content": "checkbox"
