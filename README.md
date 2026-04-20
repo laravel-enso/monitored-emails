@@ -94,6 +94,10 @@ Required external packages:
 
 - [`webklex/php-imap`](https://github.com/Webklex/php-imap) [↗](https://github.com/Webklex/php-imap)
 
+Companion frontend package:
+
+- [`@enso-ui/monitored-emails`](https://docs.laravel-enso.com/frontend/monitored-emails.html) [↗](https://github.com/enso-ui/monitored-emails)
+
 ## Contributions
 
 are welcome. Pull requests are great, but issues are good too.
