@@ -13,7 +13,7 @@ class Destroy extends Controller
 
         return [
             'message' => __('The monitored email was successfully deleted'),
-            'redirect' => 'administration.index',
+            'redirect' => 'administration.monitoredEmails.index',
         ];
     }
 }

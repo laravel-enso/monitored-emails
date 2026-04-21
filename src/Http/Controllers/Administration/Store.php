@@ -14,7 +14,7 @@ class Store extends Controller
 
         return [
             'message' => __('The monitored email was successfully created'),
-            'redirect' => 'administration.edit',
+            'redirect' => 'administration.monitoredEmails.edit',
             'param' => ['monitoredEmail' => $monitoredEmail->id],
         ];
     }
